@@ -63,15 +63,37 @@
         </p>              
       </div>
       <div class="flex flex-wrap -m-2">
+
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full lg:mx-auto">
           <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
             <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://screeps.com/api/user/badge-svg?username=audite">
             <div class="flex-grow">
               <h2 class="text-white title-font font-medium">Audite</h2>
-              <p class="text-gray-400">Newbie Land Network</p>
+              <p class="text-gray-400">Newbie Land Administrator</p>
             </div>
           </div>
         </div>
+
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full lg:mx-auto">
+          <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://screeps.com/api/user/badge-svg?username=marvintmb">
+            <div class="flex-grow">
+              <h2 class="text-white title-font font-medium">MarvinTMB</h2>
+              <p class="text-gray-400">Newbie Land Server Moderator</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full lg:mx-auto">
+          <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://screeps.com/api/user/badge-svg?username=ScarlettCatte">
+            <div class="flex-grow">
+              <h2 class="text-white title-font font-medium">Scarlett</h2>
+              <p class="text-gray-400">Newbie Land Discord Moderator</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
