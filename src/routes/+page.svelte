@@ -8,7 +8,8 @@
         try {
             errorOccurred = false;
 
-            const response = await fetch('https://screeps.newbieland.net/stats');
+            //const response = await fetch('https://screeps.newbieland.net/stats');
+            const response = await fetch(`/api/stats?targetUrl=${encodeURIComponent("https://screeps.newbieland.net/stats")}`);
             const result = await response.json();
 
             if (response.ok) {
