@@ -8,7 +8,7 @@
         try {
             errorOccurred = false;
 
-            const response = await fetch('http://screeps.newbieland.net:21025/stats');
+            const response = await fetch('https://screeps.newbieland.net/stats');
             const result = await response.json();
 
             if (response.ok) {
