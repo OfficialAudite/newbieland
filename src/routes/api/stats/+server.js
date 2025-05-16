@@ -3,8 +3,17 @@ export async function GET({ url }) {
 
     // Check if the targetUrl is within the allowed domain (newbieland.net and its subdomains)
     const allowedDomain = 'newbieland.net';
-    const isDomainAllowed = targetUrl.startsWith(`http://`) && targetUrl.includes(`.${allowedDomain}/`) ||
-                           targetUrl.startsWith(`https://`) && targetUrl.includes(`.${allowedDomain}/`);
+    let isDomainAllowed = false;
+
+    try {
+        const parsedUrl = new URL(targetUrl);
+        isDomainAllowed = parsedUrl.hostname === allowedDomain;
+    } catch (error) {
+        return new Response(JSON.stringify({ error: 'Invalid target URL' }), {
+            status: 400,
+            headers: { 'Content-Type': 'application/json' },
+        });
+    }
 
     if (!isDomainAllowed) {
         return new Response(JSON.stringify({ error: 'Invalid target URL' }), {
