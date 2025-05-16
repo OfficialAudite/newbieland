@@ -7,7 +7,9 @@
       <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
         <a href="/" class="mr-5 hover:text-white">Home</a>
         <a href="https://docs.screeps.com/api/" class="mr-5 hover:text-white">Docs</a>
-        <a href="https://discord.gg/kazgKQjSmD" class="hover:text-white">Community</a>
+        <a href="https://discord.gg/kazgKQjSmD" class="mr-5 hover:text-white">Community</a>
+        <a href="https://screeps.newbieland.net/web/" class="mr-5 hover:text-white">Stats</a>
+        <a href="https://ko-fi.com/audite" class="hover:text-white">Donate</a>
       </nav>
       <a href="/" class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
         <img src="/nls.svg" alt="logo" class="w-16">

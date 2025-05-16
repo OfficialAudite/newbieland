@@ -42,9 +42,9 @@
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Screeps: The World of Coding and Strategy
                 <br class="hidden lg:inline-block">A Universe for Programmers
             </h1>
-            
+
             <p class="mb-8 leading-relaxed">Dive into a persistent world where you develop your coding strategies to claim and defend your territory. Screeps is more than a game; it's a coding platform where each strategic move is an actual script. You'll use JavaScript to control your units, harness resources, and outsmart real human opponents. Every success and setback is a lesson in code and strategy in the unbounded space of Screeps.</p>
-            
+
             <div class="flex justify-center">
                 <!-- These buttons link to the game and the main Screeps website -->
                 <a href="https://store.steampowered.com/app/464350/Screeps/" target="_blank" rel="noopener noreferrer" class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Play Now</a>
@@ -60,7 +60,7 @@
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Our Community</h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
           United by a shared passion for strategy and coding, our community is the core of the Screeps universe. Discover a network of avid programmers and strategists dedicated to mutual growth and the exploration of limitless possibilities within the game.
-        </p>              
+        </p>
       </div>
       <div class="flex flex-wrap -m-2">
 
@@ -172,7 +172,7 @@
   </section>
 
   <section class="text-gray-400 bg-gray-900 body-font">
-    
+
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-12">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Newbie Land Server Stats</h1>
@@ -194,6 +194,15 @@
           <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">{(data?.activeRooms + "/" + data?.totalRooms) ?? "NAN"}</h2>
           <p class="leading-relaxed">Active Rooms</p>
         </div>
+      </div>
+    </div>
+
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Keep the Server Running Smoothly</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Newbie Land is freely available and does not use microtransactions. Please consider <a href="https://ko-fi.com/audite">donating</a> to keep tick time down as we grow together!
+        </p>
       </div>
     </div>
   </section>
