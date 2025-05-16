@@ -1,5 +1,16 @@
 export async function GET({ url }) {
-    const targetUrl = url.searchParams.get('targetUrl');
+    const targetUrl = url.searchParams.get('targetUrl') ?? "";
+
+    // Check if the targetUrl is within the allowed domain (newbieland.net and its subdomains)
+    const allowedDomain = 'newbieland.net';
+    const isDomainAllowed = targetUrl.startsWith(`https://${allowedDomain}/`) || targetUrl.startsWith(`https://*.${allowedDomain}/`);
+
+    if (!isDomainAllowed) {
+        return new Response(JSON.stringify({ error: 'Invalid target URL' }), {
+            status: 400,
+            headers: { 'Content-Type': 'application/json' },
+        });
+    }
 
     try {
         const response = await fetch(targetUrl);
