@@ -3,7 +3,7 @@ export async function GET({ url }) {
 
     // Check if the targetUrl is within the allowed domain (newbieland.net and its subdomains)
     const allowedDomain = 'newbieland.net';
-    const isDomainAllowed = targetUrl.startsWith(`https://${allowedDomain}/`) || targetUrl.startsWith(`https://*.${allowedDomain}/`);
+    const isDomainAllowed = targetUrl.endsWith(`.${allowedDomain}`) || targetUrl.startsWith(`https://${allowedDomain}/`);
 
     // Additional check to ensure the targetUrl is a valid URL
     try {
