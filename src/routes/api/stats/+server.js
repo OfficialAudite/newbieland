@@ -2,7 +2,7 @@ export async function GET({ url }) {
     const targetUrl = url.searchParams.get('targetUrl');
 
     // Check if the targetUrl is within the allowed domain (newbieland.net and its subdomains)
-    const allowedDomain = 'newbieland.net';
+    const allowedDomain = 'screeps.newbieland.net';
     let isDomainAllowed = false;
 
     try {
