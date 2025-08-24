@@ -1,9 +1,0 @@
-{
-  "functions": {
-    "src/routes/**/*.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "buildCommand": "npm run build",
-  "outputDirectory": ".svelte-kit/output/client"
-}
